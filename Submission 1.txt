@@ -1,0 +1,84 @@
+
+1) List 5 difference between Browser JS(console) v Nodejs
+
+a)	Browser JS is used for front end 
+   	Node JS is used for backend
+
+b)	Browser JS runs any engine like Spider monkey (Firefox), JavaScript Core (Safari), V8 (Google Chrome)
+	Node JS runs in a V8 engine which is mainly used by google chrome.
+
+c)	Browser JS global object is window 
+	Node JS global object is global 
+
+d)	In Node.js many objects are missing like
+	“window” object cause it doesn’t have a window to draw anything.
+	“location” object is related to a particular URL that means it is for page-specific.
+	“document” object also, cause it never have to render anything on a page.
+	while browser.js has all these as predefined objects but the browser is missing on these-
+	“global” object contains several functions that are not available in browsers as they are needed for server-side works only.
+	“require” object which is used to include modules in the app.
+
+e)	In Node everything is a module. You must keep your code inside a module.
+	Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+f)	Node processes request object.
+	Browsers processes response objects.
+
+****************************************************************************************************
+
+2) watch & summary 5 points - https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+
+a)	In browsers the Rendering process consists of mainly 3 parts which are Parsing, Layout, Painting
+
+b)	HTML is forgiving by nature,It will ignore many of your silly mistakes, Parsing isnt straight forward,Itll do speculative 		parsing and its reentrant.
+
+c)	The HTML code is converted to DOM tree, CSS code is converted to CSSOM tree and they both are merged to a Render Tree. The 		render treeth is then processed by the Layout where the nodes are assigned their specific locations and then finally the layout 	is painted on the screen which is what the user actually sees.
+
+d)	there are multiples trees that are generated or considered in the mechanism of browser rendering and there are actually 4 tress 
+	RenderObjects, RenderStyles, Renderlayers, Line boxes.
+
+e)	The render tree doesnt consists of the non visual elements like head,title,script etc and also nodes hidden via display:none
+
+****************************************************************************************************
+
+3) To read - https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags
+
+****************************************************************************************************
+
+4) Execute the bellow code and write your description in txt file
+
+        typeof(1)  = "number" (type of 1 is number)
+
+        typeof(1.1) = "number" (type of 1.1 is number)
+
+        typeof('1.1') = "string" (type of '1.1' is string)
+
+        typeof(true) = "boolean" (type of true is boolean)
+
+        typeof(null) = "object" (type of null is object)
+
+        typeof(undefined) = "undefined" (type of undefined is undefined)
+
+        typeof([]) = "object" (type of [] is object)
+
+        typeof({}) = "object" (type of {} is object)
+
+        typeof(NaN) = "number" (type of NaN is number)
+
+****************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
