@@ -1,0 +1,52 @@
+ 
+ 1) create your own resume data in JSON format
+
+Solution:-
+
+//Resume to JSON
+
+let Resume={
+    Name: "Ishaan Anand Dhawane",
+    Address: "14A, new maitreya colony near suraj nagar, Yavatmal - 445001",
+    Phone: "+917030505817",
+    Email: "ishaandhawane77@gmail.com",
+    Objective: "To enhance my knowledge and insights in tech firms and gain, some exposure to industry and learn under the guidance of professionals in the industry and understand the requirements of the industry to drive my skills and reasoning towards the betterment of industry as a whole.",
+    Education:{University:{Degree:"B.E Electronics and Telecommunication",Institute:"Pune Institute of Computer Technology",Percent:68},
+               Highschool:{Degree:"HSC",Institute:"Prerna College, Nagpur",Percent:75},
+               School:{Degree:"SSC",Institute:"FMEHS, Yavatmal",Percent:92},
+              },
+    Skills: {1:{Languages:"C (Intermediate), C++ (Intermediate), JavaScript (Intermediate), Python(Intermediate)"},
+             2:{WebDevelopment:"(Framework familiar: Flask), HTML, CSS, Bootstrap"},
+             3:{Competitive:"Problem Solving, OOP’s and DSA using C++"},
+             4:{Extra:"DBMS (Novice)"}
+            },           
+    BEproject: "Disease prediction system using ML – An academic project in the field of Machine learning. Worked on Front-end (HTML, CSS, Bootstrap, jQuery) Website, Back-end (Python & flask) and built an ML algorithm.",
+    Certifications:"JS, C, CPP, Python",
+    Extracurr:"Worked as BE project head, like building simple webapps and bots for the fun"
+
+};
+
+console.log(Resume);
+
+
+*********************************************************************************************************
+
+
+2) how to compare two JSON have the same properties without order?
+
+Solution:-
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script >
+        var obj1 = { name: "Person 1", age:5 };
+	var obj2 = { age:5, name: "Person 1" };
+
+	console.log(_.isEqual(obj1, obj2));
+    </script>
+
+</body>
+
+*********************************************************************************************************
+
+ 3) https://medium.com/@reach2arunprakash/www-guvi-io-zen-d395deec1373
