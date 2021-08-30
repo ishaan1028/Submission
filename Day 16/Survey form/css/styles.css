@@ -1,0 +1,108 @@
+body {
+  zoom: 75%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+.lbolds {
+  font-weight: bold;
+  display: block;
+  margin: 0;
+}
+
+.req {
+  color: red;
+}
+
+input[type="text"] {
+  padding: 0 30px 0 10px;
+  margin-right: 30px;
+}
+
+input[type="email"] {
+  padding: 0 282px 0 10px;
+  margin-bottom: 0.8rem;
+}
+
+.itxts {
+  display: flex;
+  flex-direction: column;
+}
+
+.itxts p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.dtxts {
+  display: flex;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #f49d2c7a;
+}
+
+.ovp {
+  margin: 1rem 0;
+
+  color: #6c6a6a;
+}
+
+td {
+  text-align: center;
+  padding-right: 80px;
+  border: 0;
+  font-size: 1rem;
+}
+
+.table td {
+  padding-right: 50px;
+  padding: 8px 30px 8px 20px;
+  border: 0;
+  vertical-align: middle;
+}
+
+.lhs {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.01rem;
+  width: 200px;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+}
+
+.clb {
+  border-radius: 6px 0 0 6px;
+}
+
+.crb {
+  border-radius: 0 6px 6px 0;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  margin: 5px 0;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: 1px solid rgb(211, 210, 210);
+  margin: 10px 0;
+}
+
+.lit {
+  color: rgb(255, 230, 0);
+}
