@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hahmlet", serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px 200px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px 0;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 10px 25px 10px 50px;
+  text-align: left;
+}
+
+tbody:nth-child(even) {
+  background-color: #f2f2f2;
+}
+th {
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 10px 25px;
+  margin: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+
+  color: #0969da;
+}
+
+.btn:hover {
+  background-color: #0969da;
+  color: white;
+}
+
+.active {
+  background-color: #0969da;
+  color: white;
+}
+
+td {
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

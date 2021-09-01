@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hahmlet", serif;
+}
+
+.container {
+  padding: 0 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+th {
+  font-size: 1.1rem;
+}
+
+.form {
+  margin: 0 0 20px 0;
+  padding: 20px 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input[type="text"],
+select {
+  padding: 3px 20px;
+  width: 80%;
+  margin: 5px 0 10px 0;
+}
+
+select {
+  font-size: 1rem;
+  color: gray;
+}
+.gen {
+  display: flex;
+  align-items: baseline;
+  margin: 10px 0 10px 0;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin: 0 30px 0 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.loc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 5px 0 0 0;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 10px 40px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid rgb(158, 158, 158);
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(47, 47, 255);
+  color: white;
+  cursor: pointer;
+}
+
+textarea {
+  padding: 10px 40px;
+  width: 100%;
+  margin-top: 10px;
+  resize: vertical;
+}
+
+span {
+  color: red;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin-top: 20px;
+}

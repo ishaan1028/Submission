@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <body>
+    <div class="container">
+      <h1>Table</h1>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Pincode</th>
+              <th>Gender</th>
+              <th>Food</th>
+              <th>State</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody id="tabbody"></tbody>
+        </table>
+      </div>
+
+      <h1>Form</h1>
+      <div class="form">
+        <form action="/" onsubmit="submitted(event)">
+          <div class="loc">
+            <div class="locs">
+              <label for="First Name">First Name<span>*</span></label>
+              <input type="text" id="fname" required />
+            </div>
+            <div class="locs">
+              <label for="Last Name">Last Name<span>*</span></label>
+              <input type="text" id="lname" required />
+            </div>
+          </div>
+
+          <label for="Gender">Gender<span>*</span></label>
+          <div class="loc">
+            <div class="gen">
+              <!-- <div class="gens"> -->
+              <p>Male</p>
+              <input type="radio" name="Gender" value="Male" required />
+              <!-- </div> -->
+              <!-- <div class="gens"> -->
+              <p>Female</p>
+              <input type="radio" name="Gender" value="Female" />
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="loc">
+            <div class="locs">
+              <label for="State">State<span>*</span></label>
+              <input type="text" id="state" required />
+            </div>
+            <div class="locs">
+              <label for="Country">Country<span>*</span></label>
+              <input type="text" id="country" required />
+            </div>
+            <div class="locs">
+              <label for="Pincode">Pincode<span>*</span></label>
+              <input type="text" id="pincode" required />
+            </div>
+          </div>
+
+          <label for="Food">Food<span>*</span></label>
+          <div class="loc">
+            <div class="locs">
+              <p>Option 1</p>
+              <select name="options" required>
+                <option value="" disabled selected>Select Food</option>
+
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sea food">Sea food</option>
+              </select>
+            </div>
+            <div class="locs">
+              <p>Option 2</p>
+              <select name="options" required>
+                <option value="" disabled selected>Select Food</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sea food">Sea food</option>
+              </select>
+            </div>
+            <div class="locs">
+              <p>Option 3</p>
+              <select name="options">
+                <option value="" disabled selected>Select Food</option>
+
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sea food">Sea food</option>
+              </select>
+            </div>
+            <div class="locs">
+              <p>Option 4</p>
+              <select name="options">
+                <option value="" disabled selected>Select Food</option>
+
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sea food">Sea food</option>
+              </select>
+            </div>
+            <div class="locs">
+              <p>Option 5</p>
+              <select name="options">
+                <option value="" disabled selected>Select Food</option>
+
+                <option value="South Indian">South Indian</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sea food">Sea food</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="Address">Address<span>*</span></label>
+          <textarea name="" id="address" cols="30" rows="3" required></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <!-- contend -->
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
