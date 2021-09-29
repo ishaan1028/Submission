@@ -1,0 +1,8 @@
+
+Heroku URL: https://nodejs-filesysem.herokuapp.com
+
+Endpoint details: /create will create a new file in a directory and /fetch will fetch all the files from that directory.
+
+Github repo URL: https://github.com/ishaan1028/nodejs-filesystem
+
+Last commited hash ID: 0918234
