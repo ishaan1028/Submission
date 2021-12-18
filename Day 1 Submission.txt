@@ -1,0 +1,80 @@
+1) Read:
+	a) https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages
+
+	b) https://stackoverflow.com/questions/17253545/scripting-language-vs-programming-language
+
+	c) https://cs.lmu.edu/~ray/notes/paradigms/
+
+2) Difference between HTTP1.1 vs HTTP2
+
+	*HTTP
+	
+	HTTP stands for Hypertext Transfer Protocol. It is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. HTTP is a stateless protocol, meaning that the server does not keep any data/state between two requests.
+
+	*HTTP1.1 vs HTTP2
+	
+	The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. This version is still in use on the web. In 2015, a new version of HTTP called HTTP/2 was created.
+
+	*HTTP1.1
+
+	It was no longer required for each connection to be terminated immediately after every request was served with a response; instead, with the keep-alive header, it was possible to have persistent connections. It allowed multiple requests/responses per 	TCP connection.
+	The Upgrade header was used to indicate a preference from the client that made it possible to switch to a more preferred 	protocol if found appropriate by the server.
+	HTTP/1.1 provided support for chunk transfers that allowed streaming of content dynamically as chunks and for additional 	headers to be sent after the message body. This enhancement was particularly useful in cases where values of a field remained 	unknown until the content had been produced. For example, when the content had to be digitally signed, it was not possible to 	do so before the entire content gets generated.
+	Other features that reinforced its stability were introduced such as:
+		pipelining (the second request is sent before the response to the first is adequately served)
+		content negotiation (an exchange between client and server to determine the media type, it also provides the provision 		to serve different versions of a resource at the same URI)
+		cache control (used to specify caching policies in both requests and responses)
+
+	*HTTP2
+
+	In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP. It was derived from the earlier experimental SPDY protocol.
+
+	HTTP/2 is a replacement for how HTTP is expressed “on the wire.” It is not a ground-up rewrite of the protocol; HTTP methods, status codes and semantics are the same, and it should be possible to use the same APIs as HTTP/1.x (possibly with some small additions) to represent the protocol.
+
+	The focus of the protocol is on performance; specifically, end-user perceived latency, network and server resource usage. One major goal is to allow the use of a single connection from browsers to a Web site.
+
+	The basis of the work was SPDY, but HTTP/2 has evolved to take the community’s input into account, incorporating several improvements in the process.
+
+	HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate. In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+	HTTP/2 is binary, instead of textual meaning it is more compact, travels faster ‘on the wire’ and is less susceptible to errors.
+	HTTP/2 is fully multiplexed. This sees it send multiple requests between browsers and servers at the same time over a single TCP connection. This means faster page loading and a fairer spread of network resources because poorly-behaved applications won’t ‘steal’ TCP connections from well-behaved applications as they did using HTTP/1.1
+	It uses HPACK header compression to reduce overhead. Web page HTML headers are data-heavy and compressing them means they can be sent between browser and server in one trip, over one TCP connection.
+	It allows servers to ‘push’ responses proactively into browser caches instead of waiting for a new request for each resource. To do this the server ‘speculatively’ sends data which it anticipates the browser needing.
+	HTTP/2 incorporates the new ALPN extension allowing for faster-encrypted connections and decreased load times because the application protocol is determined during the initial connection.
+	HTTP/2 reduces additional round-trip times (RTT), meaning websites load faster with less optimisation.
+	
+	*Why HTTP2 is better than HTTP1.1
+
+	Multiplexing: HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it. In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+	Server push: Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. The server also sends a message letting the client know what pushed content to expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole thing.
+
+	Header compression: Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+**************************************************************************************************************************
+
+3) Objects and its internal representation in Javascript
+
+	*Javascript Objects
+
+	JavaScript is famously known as an object-based programming language. Everything is an object in JavaScript. It is designed on a simple object-based paradigm. An object in Javascript is a collection of properties, and a property is an entity which basically has two things that are a key(name) and a value. A property's value can be a number, boolean or a function, in which case the property is known as a method. JavaScript is template based not class based and therefore we don't need to create a class to get the object. But, we can directly create objects.
+
+	*Objects overview
+
+	Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects. In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+Another example of an object could be a simple student object which contains all the important properties of student.
+
+	*Object representation 
+
+	const student = {
+		name: "Ishan",
+		rollno: 42324,
+		batch: "BE8",
+		branch: "ENTC"
+	}
+
+Here, The student object has 4 properties with keys name, rollno, batch and branch. to get the values of the properties we need to use a dot operator with object name like object_name.key_name, for example student.name to get the name of the student which is Ishan. Another way to access the value is using square brackets with object name like object_name["key_name"] to get the value of that key,
+example student["name"] will give Ishan.
+
+4) codekata practice: Done
